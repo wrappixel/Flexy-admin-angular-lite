@@ -18,15 +18,15 @@ export class CardsComponent implements OnInit {
 
   cards: cards [] = [
     {
-      image: "../../../../assets/images/u2.webp",
+      image: "assets/images/u2.webp",
       btn: "btn-danger",
     },
     {
-      image: "../../../../assets/images/u3.webp",
+      image: "assets/images/u3.webp",
       btn: "btn-warning",
     },
     {
-      image: "../../../../assets/images/u4.webp",
+      image: "assets/images/u4.webp",
       btn: "btn-info",
     },
   ]

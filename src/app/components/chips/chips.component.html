@@ -1,0 +1,44 @@
+<mat-card>
+  <mat-card-content>
+    <h4 class="mb-32">Basic Chips</h4>
+
+    <mat-chip-list>
+      <mat-chip>One fish</mat-chip>
+      <mat-chip>Two fish</mat-chip>
+      <mat-chip color="primary" selected="true">Primary fish</mat-chip>
+      <mat-chip color="accent" selected="true">Accent fish</mat-chip>
+    </mat-chip-list>
+
+  </mat-card-content>
+</mat-card>
+
+<mat-card>
+  <mat-card-content>
+    <h4 class="mb-32">Chip input</h4>
+
+    <mat-form-field class="demo-chip-list">
+      <mat-chip-list #chipList>
+        <mat-chip *ngFor="let fruit of fruits" [selectable]="selectable" [removable]="removable"
+          (removed)="remove(fruit)">
+          {{fruit.name}}
+          <mat-icon matChipRemove *ngIf="removable">cancel</mat-icon>
+        </mat-chip>
+        <input placeholder="New fruit..." [matChipInputFor]="chipList"
+          [matChipInputSeparatorKeyCodes]="separatorKeysCodes" [matChipInputAddOnBlur]="addOnBlur"
+          (matChipInputTokenEnd)="add($event)" />
+      </mat-chip-list>
+    </mat-form-field>
+  </mat-card-content>
+</mat-card>
+
+<mat-card>
+  <mat-card-content>
+    <h4 class="mb-32">Stacked Chips</h4>
+
+    <mat-chip-list class="mat-chip-list-stacked">
+      <mat-chip *ngFor="let aColor of availableColors" color="{{aColor.color}}" selected="true">
+        {{aColor.name}}
+      </mat-chip>
+    </mat-chip-list>
+  </mat-card-content>
+</mat-card>

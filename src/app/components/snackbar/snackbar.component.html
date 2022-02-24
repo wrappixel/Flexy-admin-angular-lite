@@ -1,0 +1,19 @@
+<p>snackbar works!</p>
+<mat-card>
+  <mat-card-content>
+    <h4 class="mb-32">Basic snack-bar</h4>
+
+    <mat-form-field appearance="legacy" class="w-100">
+      <mat-label>Message</mat-label>
+      <input matInput value="Disco party!" #message>
+    </mat-form-field>
+
+    <mat-form-field appearance="legacy" class="w-100">
+      <mat-label>Action</mat-label>
+      <input matInput value="Dance" #action>
+    </mat-form-field>
+
+    <button mat-stroked-button class="btn btn-info" (click)="openSnackBar(message.value, action.value)">Show
+      snack-bar</button>
+  </mat-card-content>
+</mat-card>

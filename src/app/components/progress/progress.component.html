@@ -1,0 +1,130 @@
+<!-- ============================================================== -->
+<!-- Fixed height Card Grid-->
+<!-- ============================================================== -->
+<div fxLayout="row">
+  <div fxFlex="100%">
+    <mat-card>
+      <mat-card-content>
+        <h4 class="mb-32">Determinate progress-bar</h4>
+        <mat-progress-bar mode="determinate" value="40"></mat-progress-bar>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>
+<!-- ============================================================== -->
+<!-- Fixed height Card Grid-->
+<!-- ============================================================== -->
+<div fxLayout="row">
+  <div fxFlex="100%">
+    <mat-card>
+      <mat-card-content>
+        <h4 class="mb-32">Indeterminate progress-bar</h4>
+        <mat-progress-bar mode="indeterminate" value="40"></mat-progress-bar>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>
+<!-- ============================================================== -->
+<!-- Fixed height Card Grid-->
+<!-- ============================================================== -->
+<div fxLayout="row">
+  <div fxFlex="100%">
+    <mat-card>
+      <mat-card-content>
+        <h4 class="mb-32">Buffer progress-bar</h4>
+        <mat-progress-bar mode="buffer"></mat-progress-bar>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>
+<!-- ============================================================== -->
+<!-- Fixed height Card Grid-->
+<!-- ============================================================== -->
+<div fxLayout="row">
+  <div fxFlex="100%">
+    <mat-card>
+      <mat-card-content>
+        <h4 class="mb-32">Query progress-bar</h4>
+        <mat-progress-bar mode="query"></mat-progress-bar>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>
+<!-- ============================================================== -->
+<!-- Fixed height Card Grid-->
+<!-- ============================================================== -->
+<div fxLayout="row">
+  <div fxFlex="100%">
+    <mat-card>
+      <mat-card-content>
+        <h4 class="mb-32">Colored progress-bar</h4>
+        <mat-progress-bar mode="determinate" value="40" color="primary"></mat-progress-bar><br />
+        <mat-progress-bar mode="determinate" value="80" color="accent"></mat-progress-bar><br />
+        <mat-progress-bar mode="determinate" value="20" color="warn"></mat-progress-bar>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>
+<!-- ============================================================== -->
+<!-- Fixed height Card Grid-->
+<!-- ============================================================== -->
+<div fxLayout="row">
+  <div fxFlex="100%">
+
+    <mat-card>
+      <mat-card-content>
+        <h4 class="example-h2 mb-32">Progress bar configuration</h4>
+
+        <section class="example-section">
+          <label class="example-margin">Color:</label>
+          <mat-radio-group color="primary">
+            <mat-radio-button class="example-margin" value="primary">
+              Primary
+            </mat-radio-button>
+            <mat-radio-button class="example-margin" value="accent">
+              Accent
+            </mat-radio-button>
+            <mat-radio-button class="example-margin" value="warn">
+              Warn
+            </mat-radio-button>
+          </mat-radio-group>
+        </section>
+
+        <section class="example-section">
+          <label class="example-margin">Mode:</label>
+          <mat-radio-group [(ngModel)]="mode" color="primary">
+            <mat-radio-button class="example-margin" value="determinate">
+              Determinate
+            </mat-radio-button>
+            <mat-radio-button class="example-margin" value="indeterminate">
+              Indeterminate
+            </mat-radio-button>
+            <mat-radio-button class="example-margin" value="buffer">
+              Buffer
+            </mat-radio-button>
+            <mat-radio-button class="example-margin" value="query">
+              Query
+            </mat-radio-button>
+          </mat-radio-group>
+        </section>
+
+        <section class="example-section" *ngIf="mode === 'determinate' || mode === 'buffer'">
+          <label class="example-margin">Progress:</label>
+          <mat-slider class="example-margin" [(ngModel)]="value"></mat-slider>
+        </section>
+        <section class="example-section" *ngIf="mode === 'buffer'">
+          <label class="example-margin">Buffer:</label>
+          <mat-slider class="example-margin" [(ngModel)]="bufferValue"></mat-slider>
+        </section>
+
+        <h4 class="example-h2">Result</h4>
+
+        <section class="example-section">
+          <mat-progress-bar class="example-margin" [color]="color" [mode]="mode" [value]="value"
+            [bufferValue]="bufferValue">
+          </mat-progress-bar>
+        </section>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>

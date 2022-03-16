@@ -62,3 +62,13 @@
     min-height: 60px;
   }
 }
+
+.mat-sidenav-content {
+  margin-left: 265px !important;
+}
+
+@media (max-width: 959px) {
+  .mat-sidenav-content {
+    margin-left: 0px !important;
+  }
+}

@@ -2,21 +2,21 @@
 // Colors
 // @=@=@=@=@=@=@=@=@=@=@=@=@=@=@=@=@
 
-$color-array:(primary: $primary,
-  secondary: $secondary,
-  success: $success,
-  info: $info,
-  warning: $warning,
-  danger: $danger,
-  indigo: $indigo,
-  light: $light,
-  dark: $dark,
-  muted: $muted,
-  white: $white,
-  black: $black,
-  light-primary: $light-primary,
-  light-info: $light-info,
-  light-muted: $light-muted,
+$color-array:("primary": $primary,
+  "secondary": $secondary,
+  "success": $success,
+  "info": $info,
+  "warning": $warning,
+  "danger": $danger,
+  "indigo": $indigo,
+  "light": $light,
+  "dark": $dark,
+  "muted": $muted,
+  "white": $white,
+  "black": $black,
+  "light-primary": $light-primary,
+  "light-info": $light-info,
+  "light-muted": $light-muted,
 );
 
 @each $color-name,
@@ -105,13 +105,13 @@ $f: 10;
 // Font Weights
 // @=@=@=@=@=@=@=@=@=@=@=@=@=@=@=@=@
 
-$font-array:(lighter: 100,
-  light: 300,
-  normal: 400,
-  medium: 500,
-  semibold: 600,
-  bold: 700,
-  black: 800,
+$font-array:("lighter": 100,
+  "light": 300,
+  "normal": 400,
+  "medium": 500,
+  "semibold": 600,
+  "bold": 700,
+  "black": 800,
 );
 
 @each $font-weight,

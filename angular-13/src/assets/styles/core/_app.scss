@@ -1,0 +1,74 @@
+// @=@=@=@=@=@=@=@=@=@=@=@=@=@=@=@=@
+// App
+// @=@=@=@=@=@=@=@=@=@=@=@=@=@=@=@=@
+
+.body-wrapper {
+  padding: 30px;
+}
+
+.page-wrapper {
+  max-width: 1275px;
+  height: auto;
+  margin: 0px auto;
+}
+
+.activity-border {
+  border-left: 2px solid #bdbdbd;
+  position: relative;
+  
+  .activity-ring {
+    position: absolute;
+    left: -1px;
+    top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &::before {
+      position: absolute;
+      width: 20px;
+      height: 35px;
+      content: "";
+      background-color: white;
+    }
+    
+    .ring-success {
+      border: 2px solid $success;
+    }
+    .ring-primary {
+      border: 2px solid $primary;
+    }
+    .ring-info {
+      border: 2px solid $info;
+    }
+    .ring-warning {
+      border: 2px solid $warning;
+    }
+    .ring-danger {
+      border: 2px solid $danger;
+    }
+    
+    .ring {
+      position: absolute;
+      content: "";
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background-color: white;
+    }
+  }
+
+  .activity-message {
+    min-height: 60px;
+  }
+}
+
+.mat-sidenav-content {
+  margin-left: 265px !important;
+}
+
+@media (max-width: 959px) {
+  .mat-sidenav-content {
+    margin-left: 0px !important;
+  }
+}

@@ -1,0 +1,21 @@
+<!-- Cards -->
+<div fxLayout="row wrap" fxLayoutGap="30px grid">
+  <div fxFlex.md="33%" fxFlex.lg="33%" fxFlex.xl="33%" fxFlex.sm="100%" *ngFor="let card of cards">
+    <mat-card class="overflow-hidden">
+      <div>
+        <img src="{{ card.image }}" class="w-100" alt="">
+      </div>
+      <mat-card-content>
+        <div>
+          <p class="fs-18 lh-lg fw-medium">
+            Super awesome, Angular 12 is coming soon!
+          </p>
+          <p class="op-7">
+            Some quick example text to build on the card title and make up the bulk of the card's content.
+          </p>
+          <button mat-button class="btn {{ card.btn }} fw-normal mt-4">Learn More</button>
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>

@@ -1,0 +1,63 @@
+<mat-card class="no-shadow">
+  <mat-card-content>
+    <h3 class="mb-32">Toolbar</h3>
+
+    <p class="fs-16">Basic toolbar:</p>
+    <mat-toolbar>My App</mat-toolbar>
+    <p class="fs-16 mt-16">The primary color toolbar:</p>
+    <mat-toolbar color="primary">
+      <span>Primary Toolbar</span>
+      <span fxFlex></span>
+      <button mat-button href="#" mat-icon-button>
+        <mat-icon>search</mat-icon>
+      </button>
+      <button mat-button href="#" mat-icon-button>
+        <mat-icon>more_vert</mat-icon>
+      </button>
+    </mat-toolbar>
+    <p class="fs-16 mt-16">Multiple row</p>
+    <mat-toolbar>
+      <mat-toolbar-row>
+        <span>First Row</span>
+      </mat-toolbar-row>
+
+      <mat-toolbar-row>
+        <span>Second Row</span>
+      </mat-toolbar-row>
+    </mat-toolbar>
+    <p class="fs-16 mt-16">Positining toolbar</p>
+    <mat-toolbar color="primary">
+      <span>Application Title</span>
+
+      <!-- This fills the remaining space of the current row -->
+      <span class="example-fill-remaining-space"></span>
+
+      <span>Right Aligned Text</span>
+    </mat-toolbar>
+    <p class="fs-16 mt-16">An accent toolbar using the second toolbar row:</p>
+    <mat-toolbar color="accent">
+      <mat-toolbar-row>
+        <span>Second Line Toolbar</span>
+      </mat-toolbar-row>
+    </mat-toolbar>
+    <p class="fs-16 mt-16">A primary toolbar using the third toolbar row:</p>
+    <mat-toolbar class="bg-success" color="warn">
+      <mat-toolbar-row>
+        <span>Custom Toolbar</span>
+      </mat-toolbar-row>
+
+      <mat-toolbar-row>
+        <span>Second Line</span>
+        <span class="example-spacer"></span>
+        <mat-icon class="example-icon">verified_user</mat-icon>
+      </mat-toolbar-row>
+
+      <mat-toolbar-row>
+        <span>Third Line</span>
+        <span class="example-spacer"></span>
+        <mat-icon class="example-icon">favorite</mat-icon>
+        <mat-icon class="example-icon">delete</mat-icon>
+      </mat-toolbar-row>
+    </mat-toolbar>
+  </mat-card-content>
+</mat-card>

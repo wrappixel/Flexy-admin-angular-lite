@@ -1,0 +1,115 @@
+<mat-card>
+  <mat-card-content>
+    <h3 class="mb-32">Buttons</h3>
+
+    <h4>Basic Buttons</h4>
+    <div class="button-row mb-24">
+      <button mat-button>Basic</button>
+      <button mat-button color="primary">Primary</button>
+      <button mat-button color="accent">Accent</button>
+      <button mat-button color="warn">Warn</button>
+      <button mat-button disabled>Disabled</button>
+      <a mat-button routerLink=".">Link</a>
+    </div>
+
+    <h4>Raised Buttons</h4>
+    <div class="button-row mb-24">
+      <button mat-raised-button class="me-8 mb-8">Basic</button>
+      <button mat-raised-button class="me-8 mb-8" color="primary">Primary</button>
+      <button mat-raised-button class="me-8 mb-8" color="accent">Accent</button>
+      <button mat-raised-button class="me-8 mb-8" color="warn">Warn</button>
+      <button mat-raised-button class="me-8 mb-8" disabled>Disabled</button>
+      <a mat-raised-button class="me-8 mb-8" routerLink=".">Link</a>
+    </div>
+
+    <h4>Icon Buttons</h4>
+    <div class="button-row mb-24">
+      <button mat-icon-button>
+        <mat-icon aria-label="Example icon-button with a heart icon">favorite</mat-icon>
+      </button>
+      <button mat-icon-button color="primary">
+        <mat-icon aria-label="Example icon-button with a heart icon">favorite</mat-icon>
+      </button>
+      <button mat-icon-button color="accent">
+        <mat-icon aria-label="Example icon-button with a heart icon">favorite</mat-icon>
+      </button>
+      <button mat-icon-button color="warn">
+        <mat-icon aria-label="Example icon-button with a heart icon">favorite</mat-icon>
+      </button>
+      <button mat-icon-button disabled>
+        <mat-icon aria-label="Example icon-button with a heart icon">favorite</mat-icon>
+      </button>
+    </div>
+
+
+    <h4>Fab Buttons</h4>
+    <div class="button-row mb-24">
+      <button mat-fab class="mb-8 me-8">Basic</button>
+      <button mat-fab class="mb-8 me-8" color="primary">Primary</button>
+      <button mat-fab class="mb-8 me-8" color="accent">Accent</button>
+      <button mat-fab class="mb-8 me-8" color="warn">Warn</button>
+      <button mat-fab class="mb-8 me-8" disabled>Disabled</button>
+      <button mat-fab class="mb-8 me-8">
+        <mat-icon aria-label="Example icon-button with a heart icon">favorite</mat-icon>
+      </button>
+      <a mat-fab class="mb-8 me-8" routerLink=".">Link</a>
+    </div>
+
+    <h4>Mini Fab Buttons</h4>
+    <div class="button-row mb-24">
+      <button mat-mini-fab class="mb-8 me-8">Base</button>
+      <button mat-mini-fab class="mb-8 me-8" color="primary">Pri</button>
+      <button mat-mini-fab class="mb-8 me-8" color="accent">Acc</button>
+      <button mat-mini-fab class="mb-8 me-8" color="warn">Warn</button>
+      <button mat-mini-fab class="mb-8 me-8" disabled>Dis</button>
+      <button mat-mini-fab class="mb-8 me-8">
+        <mat-icon aria-label="Example icon-button with a heart icon">favorite</mat-icon>
+      </button>
+      <a mat-mini-fab class="mb-8 me-8" routerLink=".">Link</a>
+    </div>
+
+    <h4>Basic button-toggles</h4>
+    <mat-button-toggle-group class="mb-24" name="fontStyle" aria-label="Font Style">
+      <mat-button-toggle value="bold">Bold</mat-button-toggle>
+      <mat-button-toggle value="italic">Italic</mat-button-toggle>
+      <mat-button-toggle value="underline">Underline</mat-button-toggle>
+    </mat-button-toggle-group>
+
+
+    <h4>Button toggle </h4>
+    <div class="mb-24">
+      <mat-button-toggle-group #group="matButtonToggleGroup">
+        <mat-button-toggle value="left">
+          <mat-icon>format_align_left</mat-icon>
+        </mat-button-toggle>
+        <mat-button-toggle value="center">
+          <mat-icon>format_align_center</mat-icon>
+        </mat-button-toggle>
+        <mat-button-toggle value="right">
+          <mat-icon>format_align_right</mat-icon>
+        </mat-button-toggle>
+        <mat-button-toggle value="justify" disabled>
+          <mat-icon>format_align_justify</mat-icon>
+        </mat-button-toggle>
+      </mat-button-toggle-group>
+      <div class="m-t-20">Selected value: {{group.value}}</div>
+    </div>
+
+    <h4>Button toggle appearance</h4>
+    <span class="fs-16">Default appearance:</span>
+    <mat-button-toggle-group name="fontStyle" aria-label="Font Style" class="ms-20">
+      <mat-button-toggle value="bold">Bold</mat-button-toggle>
+      <mat-button-toggle value="italic">Italic</mat-button-toggle>
+      <mat-button-toggle value="underline">Underline</mat-button-toggle>
+    </mat-button-toggle-group><br />
+
+    <div class="mt-20">
+      <span class="fs-16">Legacy appearance:</span>
+      <mat-button-toggle-group appearance="legacy" name="fontStyle" aria-label="Font Style" class="ms-20">
+        <mat-button-toggle value="bold">Bold</mat-button-toggle>
+        <mat-button-toggle value="italic">Italic</mat-button-toggle>
+        <mat-button-toggle value="underline">Underline</mat-button-toggle>
+      </mat-button-toggle-group>
+    </div>
+  </mat-card-content>
+</mat-card>

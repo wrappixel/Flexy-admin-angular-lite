@@ -1,0 +1,59 @@
+<!-- ============================================================== -->
+<!-- Fixed height Card Grid-->
+<!-- ============================================================== -->
+<div fxLayout="row">
+    <div fxFlex="100%">
+      <mat-card>
+        <mat-card-content>
+          <h4 class="mb-32">Basic Progress spinner</h4>
+          <mat-spinner></mat-spinner>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+  <!-- ============================================================== -->
+  <!-- Basic Card Grid-->
+  <!-- ============================================================== -->
+  <mat-card>
+    <mat-card-content>
+      <h4 class="mb-32 example-h2">Configurable progress spinner</h4>
+  
+      <section class="example-section">
+        <label class="example-margin">Color:</label>
+        <mat-radio-group [(ngModel)]="color">
+          <mat-radio-button class="example-margin" value="primary">
+            Primary
+          </mat-radio-button>
+          <mat-radio-button class="example-margin" value="accent">
+            Accent
+          </mat-radio-button>
+          <mat-radio-button class="example-margin" value="warn">
+            Warn
+          </mat-radio-button>
+        </mat-radio-group>
+      </section>
+  
+      <section class="example-section">
+        <label class="example-margin">Mode:</label>
+        <mat-radio-group [(ngModel)]="mode">
+          <mat-radio-button class="example-margin" value="determinate">
+            Determinate
+          </mat-radio-button>
+          <mat-radio-button class="example-margin" value="indeterminate">
+            Indeterminate
+          </mat-radio-button>
+        </mat-radio-group>
+      </section>
+  
+      <section class="example-section" *ngIf="mode === 'determinate'">
+        <label class="example-margin">Progress:</label>
+        <mat-slider class="example-margin" [(ngModel)]="value"></mat-slider>
+      </section>
+  
+      <h4 class="mb-20 mt-20 example-h2">Result</h4>
+  
+      <mat-progress-spinner class="example-margin" [color]="color" [mode]="mode" [value]="value">
+      </mat-progress-spinner>
+    </mat-card-content>
+  </mat-card>
+  

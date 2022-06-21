@@ -1,0 +1,126 @@
+@use '@angular/material'as mat;
+@include mat.core();
+
+$flexy-primary: (
+  100: #fcf1ed,
+  500: #03c9d7,
+  700: #425a61,
+  contrast: (
+    100: #393939,
+    500: #ffffff,
+    700: #ffffff,
+  ),
+);
+
+$flexy-accent: (
+  100: #fcf1ed,
+  500: #fb9678,
+  700: #425a61,
+  contrast: (
+    100: #393939,
+    500: #ffffff,
+    700: #ffffff,
+  ),
+);
+
+$flexy-warn: (
+  100: #fcf1ed,
+  500: #e46a76,
+  700: #5d363a,
+  contrast: (
+    100: #393939,
+    500: #ffffff,
+    700: #ffffff,
+  ),
+);
+
+$flexy-angular-primary: mat.define-palette($flexy-primary);
+$flexy-angular-accent: mat.define-palette($flexy-accent);
+
+$flexy-angular-warn: mat.define-palette($flexy-warn);
+
+$flexy-angular-theme: mat.define-light-theme((
+  color: (
+    primary: $flexy-angular-primary,
+    accent: $flexy-angular-accent,
+    warn: $flexy-angular-warn,
+  )
+));
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: 'DM Sans', sans-serif !important;
+}
+
+@include mat.all-component-themes($flexy-angular-theme);
+
+
+$my-custom-level: mat.define-typography-level($font-weight: 400,
+  $font-size: 1rem,
+);
+
+$my-custom-typography: mat.define-typography-config($font-family: "'DM Sans', sans-serif",
+  $headline: mat.define-typography-level(40px, 1, 500),
+  $title: mat.define-typography-level(32px, 1, 500),
+  $subheading-2: mat.define-typography-level(24px, 1, 500),
+  $subheading-1: mat.define-typography-level(18px, 1, 500),
+);
+
+@include mat.core($my-custom-typography);
+
+
+
+
+
+// @=@=@=@=@=@=@=@=@=@=@=@=@=@=@=@=@
+// Font Family
+// @=@=@=@=@=@=@=@=@=@=@=@=@=@=@=@=@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+$bodyfont: 'DM Sans',
+sans-serif;
+
+
+// @=@=@=@=@=@=@=@=@=@=@=@=@=@=@=@=@
+// Colors
+// @=@=@=@=@=@=@=@=@=@=@=@=@=@=@=@=@
+
+// Body Colors
+$body-color: #fafbfb;
+
+// Main Colors
+$primary: #fb9678;
+$secondary: #777e89;
+$success: #00c292;
+$info: #03c9d7;
+$warning: #fec90f;
+$danger: #e46a76;
+$indigo: #551a8b;
+$light: #4952581f;
+$dark: #000000de;
+// $dark: #393939;
+$muted: #949db2;
+$white: #fff;
+$black: #000;
+
+// Light Colors
+$light-primary: #fcf1ed;
+$light-info: #f7f8f7;
+$light-muted: #99abb4;
+
+// Dark Colors
+$dark-danger: #5d363a;
+$dark-warning: #655419;
+$dark-info: #425a61;
+$dark-success: #145242;
+
+
+
+// Borders
+$border-color: unset;
+$shadow: rgba(113, 122, 131, 0.11);

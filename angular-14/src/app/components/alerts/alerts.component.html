@@ -1,0 +1,49 @@
+<!-- Alerts -->
+<div class="card">
+  <div class="card-body">
+    <h4 class="mb-32">Alerts</h4>
+
+    <div *ngFor="let alerts of alerts"
+      class="alert {{ alerts.background }} {{ alerts.color }} d-flex fs-14 align-items-center rounded mb-16"
+      role="alert">
+      <i-feather name="{{ alerts.icon }}" class="{{ alerts.iconColor }} feather-base me-12"></i-feather>
+      {{ alerts.message }}
+    </div>
+
+  </div>
+</div>
+
+
+
+<!-- Alerts Outline -->
+<div class="card">
+  <div class="card-body">
+    <h4 class="mb-32">Alerts Outline</h4>
+
+    <div *ngFor="let alerts of alerts"
+      class="alert {{ alerts.border }} {{ alerts.color }} background-none d-flex fs-14 align-items-center rounded mb-16"
+      role="alert">
+      <i-feather name="{{ alerts.icon }}" class="{{ alerts.iconColor }} feather-base me-12"></i-feather>
+      {{ alerts.message }}
+    </div>
+
+  </div>
+</div>
+
+
+<!-- Alert with Desc -->
+<div class="card">
+  <div class="card-body">
+    <h4 class="mb-32">Alert with Desc</h4>
+
+    <div *ngFor="let desc of desc"
+      class="alert {{ desc.background }} {{ desc.color }} d-flex fs-14 align-items-start rounded mb-16" role="alert">
+      <i-feather name="{{ desc.icon }}" class="{{ desc.iconColor }} feather-base me-12"></i-feather>
+      <div>
+        <p class="mb-8 fw-medium fs-16">{{ desc.heading }}</p>
+        <span class="">{{ desc.title }}<span class="fw-medium">{{ desc.subheading }}</span></span>
+      </div>
+    </div>
+
+  </div>
+</div>

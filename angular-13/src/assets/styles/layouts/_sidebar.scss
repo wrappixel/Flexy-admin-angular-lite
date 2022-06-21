@@ -1,0 +1,30 @@
+// @=@=@=@=@=@=@=@=@=@=@=@=@=@=@=@=@
+// Sidebar
+// @=@=@=@=@=@=@=@=@=@=@=@=@=@=@=@=@
+
+.sidenav {
+  min-width: 265px;
+  box-shadow: 0px 7px 30px 0px $shadow;
+  border: 0;
+
+  .list-group {
+    display: flex;
+    align-items: center;
+  }
+
+  .sidebar-menu {
+    padding: 14px 16px;
+    border-radius: 9px;
+
+    &.activelink {
+      background-color: $info !important;
+      color: $white !important;
+    }
+  }
+
+  .buy-flexy {
+    background-color: $light-primary;
+    border-radius: 10px;
+  }
+
+}

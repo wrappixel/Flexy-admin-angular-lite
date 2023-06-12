@@ -1,4 +1,4 @@
-<!-- ## What's included in MaterialPro Angular 12 Lite [versions 7,8,9, and 10,11] -->
+<!-- ## What's included in MaterialPro Angular 16 Lite [versions 7,8,9, and 10,11] -->
 
 <!-- Heading of Template -->
 <h1>
@@ -104,7 +104,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 <h2>Licensing</h2>
 <ul>
   <li>
-    <p>Copyright 2022 Wrappixel (<a href="https://www.wrappixel.com/" rel="nofollow">https://www.wrappixel.com/</a>)</p>
+    <p>Copyright 2023 Wrappixel (<a href="https://www.wrappixel.com/" rel="nofollow">https://www.wrappixel.com/</a>)</p>
   </li>
   <li>
     <p>Licensed under MIT (<a href="https://www.wrappixel.com/license/">https://www.wrappixel.com/license/</a>)</p>
@@ -114,7 +114,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 <!-- ## License -->
 
-<!-- MaterialPro Angular 12 Lite Template is released under MIT license. MaterialPro Angular Lite is Free angular 12 template designed and developed by WrapPixel. Please feel free to download it and use it for your personal as well as commercial projects. Also do not forgot to share it with your friends and colleagues. -->
+<!-- MaterialPro Angular 16 Lite Template is released under MIT license. MaterialPro Angular Lite is Free angular 16 template designed and developed by WrapPixel. Please feel free to download it and use it for your personal as well as commercial projects. Also do not forgot to share it with your friends and colleagues. -->
 
 ## Pro version is cooming soon.
 

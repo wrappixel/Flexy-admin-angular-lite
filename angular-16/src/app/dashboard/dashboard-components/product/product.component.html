@@ -1,0 +1,53 @@
+<!-- Daily Activity -->
+<mat-card class="w-100">
+  <mat-card-content>
+    <h4 class="mb-56">Product Perfomance</h4>
+
+    <div class="table-responsive">
+      <table mat-table [dataSource]="dataSource" class="text-nowrap w-100">
+
+        <!-- Id Column -->
+        <ng-container matColumnDef="id">
+          <th mat-header-cell *matHeaderCellDef> Id </th>
+          <td mat-cell class="fw-medium" *matCellDef="let element"> {{element.id}} </td>
+        </ng-container>
+
+        <!-- Assigned Column -->
+        <ng-container matColumnDef="assigned">
+          <th mat-header-cell *matHeaderCellDef> Assigned </th>
+          <td mat-cell *matCellDef="let element">
+            <p class="mb-0 fw-medium">{{ element.name }}</p>
+            <p class="mb-0 fw-normal op-5">{{ element.work }}</p>
+          </td>
+        </ng-container>
+
+        <!-- Project Column -->
+        <ng-container matColumnDef="name">
+          <th mat-header-cell *matHeaderCellDef> Project </th>
+          <td mat-cell *matCellDef="let element">
+            <p class="mb-0 fw-medium op-5">{{element.project}}</p>
+          </td>
+        </ng-container>
+
+        <!-- Priority Column -->
+        <ng-container matColumnDef="priority">
+          <th mat-header-cell *matHeaderCellDef> Priority </th>
+          <td mat-cell *matCellDef="let element">
+            <span class="badge {{element.badge}} rounded-pill">{{element.priority}}</span>
+          </td>
+        </ng-container>
+
+        <!-- Budget Column -->
+        <ng-container matColumnDef="budget">
+          <th mat-header-cell *matHeaderCellDef> Budget </th>
+          <td mat-cell *matCellDef="let element">
+            <p class="mb-0 fw-medium">{{element.budget}}</p>
+          </td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+      </table>
+    </div>
+  </mat-card-content>
+</mat-card>

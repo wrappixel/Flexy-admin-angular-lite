@@ -1,0 +1,123 @@
+// @=@=@=@=@=@=@=@=@=@=@=@=@=@=@=@=@
+// Colors
+// @=@=@=@=@=@=@=@=@=@=@=@=@=@=@=@=@
+
+$color-array:("primary": $primary,
+  "secondary": $secondary,
+  "success": $success,
+  "info": $info,
+  "warning": $warning,
+  "danger": $danger,
+  "indigo": $indigo,
+  "light": $light,
+  "dark": $dark,
+  "muted": $muted,
+  "white": $white,
+  "black": $black,
+  "light-primary": $light-primary,
+  "light-info": $light-info,
+  "light-muted": $light-muted,
+);
+
+@each $color-name,
+$color-value in $color-array {
+  .text-#{$color-name} {
+    color: $color-value;
+  }
+
+  .bg-#{$color-name} {
+    background-color: $color-value;
+  }
+
+  .btn-#{$color-name} {
+    background-color: $color-value;
+    transition: all 0.4s ease-in-out;
+    color: $white;
+
+    &:hover {
+      background-color: rgba($color: $color-value, $alpha: 0.6);
+    }
+  }
+}
+
+
+
+
+// @=@=@=@=@=@=@=@=@=@=@=@=@=@=@=@=@
+// Margins & Paddings
+// @=@=@=@=@=@=@=@=@=@=@=@=@=@=@=@=@
+
+$max: 70;
+$offset: 4;
+$unit: "px"; // Feel free to change the unit.
+
+@mixin list-loop($className, $styleName) {
+  $i: 0;
+
+  @while $i <=$max {
+    #{$className + $i} {
+      #{$styleName}: #{$i + $unit} !important;
+    }
+
+    $i: $i+$offset;
+  }
+}
+
+// Margins
+@include list-loop(".mt-", "margin-top");
+@include list-loop(".m-", "margin");
+@include list-loop(".mb-", "margin-bottom");
+@include list-loop(".ltr .ms-", "margin-left");
+@include list-loop(".ltr .me-", "margin-right");
+@include list-loop(".rtl .ms-", "margin-right");
+@include list-loop(".rtl .me-", "margin-left");
+
+// Paddings
+@include list-loop(".pt-", "padding-top");
+@include list-loop(".p-", "padding");
+@include list-loop(".pb-", "padding-bottom");
+@include list-loop(".ltr .ps-", "padding-left");
+@include list-loop(".ltr .pe-", "padding-right");
+@include list-loop(".rtl .pe-", "padding-left");
+@include list-loop(".rtl .ps-", "padding-right");
+
+
+
+
+
+// @=@=@=@=@=@=@=@=@=@=@=@=@=@=@=@=@
+// Font Sizes
+// @=@=@=@=@=@=@=@=@=@=@=@=@=@=@=@=@
+
+$f: 10;
+
+@while $f <= 50 {
+  .fs-#{$f} {
+    font-size: 1px * $f;
+  }
+
+  $f: $f+2;
+}
+
+
+
+
+// @=@=@=@=@=@=@=@=@=@=@=@=@=@=@=@=@
+// Font Weights
+// @=@=@=@=@=@=@=@=@=@=@=@=@=@=@=@=@
+
+$font-array:("lighter": 100,
+  "light": 300,
+  "normal": 400,
+  "medium": 500,
+  "semibold": 600,
+  "bold": 700,
+  "black": 800,
+);
+
+@each $font-weight,
+$font-value in $font-array {
+  .fw-#{$font-weight} {
+    font-weight: $font-value;
+  }
+}

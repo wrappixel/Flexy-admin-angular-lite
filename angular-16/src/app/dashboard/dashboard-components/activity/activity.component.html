@@ -1,0 +1,17 @@
+<!-- Daily Activity -->
+<mat-card>
+  <mat-card-content>
+    <h4 class="mb-60">Daily Activity</h4>
+    <div class="d-flex" *ngFor="let activity of activity">
+      <p class="fw-bold ps-16 pe-20 fs-12">{{ activity.time }}</p>
+      <div class="activity-border">
+        <div class="deep">
+          <div class="activity-ring">
+            <div class="ring {{ activity.ringColor }}"></div>
+          </div>
+        </div>
+        <p class="ps-20 pe-16 activity-message">{{ activity.message }}</p>
+      </div>
+    </div>
+  </mat-card-content>
+</mat-card>

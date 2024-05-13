@@ -1,0 +1,70 @@
+<!-- Form Layout -->
+<div class="card">
+  <div class="card-body">
+    <h4 class="mb-32">Form Layout</h4>
+    <form>
+      <mat-form-field class="w-100 fs-16" appearance="outline">
+        <mat-label>Name</mat-label>
+        <input matInput type="text" value="Nirav Joshi" placeholder="Enter your Name">
+      </mat-form-field>
+
+      <mat-form-field class="w-100 fs-16" appearance="outline">
+        <mat-label>Email</mat-label>
+        <input matInput type="email" placeholder="Enter your email">
+      </mat-form-field>
+
+      <mat-form-field class="w-100 fs-16" appearance="outline">
+        <mat-label>Password</mat-label>
+        <input matInput type="password" placeholder="Enter your password">
+      </mat-form-field>
+
+      <mat-form-field class="w-100 fs-16" appearance="outline">
+        <mat-label>Textarea</mat-label>
+        <textarea matInput rows="6" placeholder="Write your message" value="Default Value"></textarea>
+      </mat-form-field>
+
+      <mat-form-field class="w-100 fs-16" appearance="outline">
+        <mat-label>Error</mat-label>
+        <input matInput type="text" value="Deep Javiya">
+      </mat-form-field>
+
+      <section class="fs-16 mb-32">
+        <mat-checkbox color="primary" [checked]="checked" class="d-block mb-16">Terms & Condition</mat-checkbox>
+        <mat-checkbox class="op-7" [disabled]="true">Disabled</mat-checkbox>
+      </section>
+
+      <mat-radio-group color="primary" class="fs-16" aria-label="Select an option">
+        <mat-label class="text-secondary">Gender</mat-label>
+        <mat-radio-button value="1" class="mt-8 mb-16 d-block" [checked]="checked">Female</mat-radio-button>
+        <mat-radio-button value="2" class="d-block mb-16">Male</mat-radio-button>
+        <mat-radio-button value="3" class="d-block mb-36">Other</mat-radio-button>
+      </mat-radio-group>
+
+      <button mat-button class="btn btn-info fw-normal" (click)="onBack()" type="submit">Submit</button>
+    </form>
+  </div>
+</div>
+
+
+
+<!-- Form Design Type -->
+<div class="card">
+  <div class="card-body">
+    <h4 class="mb-32">Form Design Type</h4>
+
+    <mat-form-field class="me-24 fs-16" appearance="outline">
+      <mat-label>Outlined</mat-label>
+      <input matInput>
+    </mat-form-field>
+
+    <mat-form-field class="me-24 fs-16" appearance="fill">
+      <mat-label>Filled</mat-label>
+      <input matInput>
+    </mat-form-field>
+
+    <mat-form-field class="me-24 fs-16" >
+      <mat-label>Standard</mat-label>
+      <input matInput>
+    </mat-form-field>
+  </div>
+</div>

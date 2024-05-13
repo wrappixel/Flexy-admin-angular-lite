@@ -1,0 +1,41 @@
+// @=@=@=@=@=@=@=@=@=@=@=@=@=@=@=@=@
+// Header
+// @=@=@=@=@=@=@=@=@=@=@=@=@=@=@=@=@
+
+.header {
+  // background-color: $body-color !important;
+  background-color: transparent !important;
+}
+
+.search-section {
+  z-index: 999;
+  padding: 15px 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  max-height: 64px;
+  background-color: $white;
+  box-shadow: 0px 7px 30px 0px $shadow;
+}
+
+.profile-dropdown {
+  width: 385px;
+  box-shadow: rgba(0, 0, 0, 0.08) 1px 2px 10px !important;
+}
+
+.mat-toolbar.mat-primary {
+  z-index: 9 !important;
+}
+
+
+
+// @=@=@=@=@=@=@=@=@=@=@=@=@=@=@=@=@
+// Media Querys
+// @=@=@=@=@=@=@=@=@=@=@=@=@=@=@=@=@
+
+@media (max-width: 575px) {
+  .profile-dropdown {
+    max-width: 250px !important;
+  }
+}

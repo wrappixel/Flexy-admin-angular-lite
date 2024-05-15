@@ -7,14 +7,14 @@
     <div class="p-16">
       <div class="mb-16">
         <a href="javascript:void(0)" class="d-flex align-items-center">
-          <img src="assets/images/favicon.png" alt=""> <span class="ms-16 fw-medium fs-26">Flexy</span>
+          <img src="assets/images/favicon.svg" alt=""> <span class="ms-16 fw-medium fs-26">Flexy</span>
         </a>
 
       </div>
 
       <div class="pt-8">
         <ul>
-          <li class="list-group mb-8" *ngFor="let sidenav of sidebarMenu">
+          <li class="list-group mb-2" *ngFor="let sidenav of sidebarMenu">
             <a matRipple [matRippleColor]="'#f7f8f443'" routerLink="{{ sidenav.link }}"
               class="sidebar-menu fs-16 w-100 d-flex align-items-center" [routerLinkActive]="routerActive">
               <i-feather name="{{ sidenav.icon }}" class="feather-base me-16"></i-feather> <span
@@ -32,10 +32,10 @@
               <p class="fw-bold fs-18 mb-16 pb-8">Get This for Free</p>
               <ul>
                 <li class="mb-8">
-                  <a href="javascript:void(0)" mat-flat-button color="primary" class="fw-light w-100 fs-14">Download Free</a>
+                  <a href="https://www.wrappixel.com/templates/flexy-angular-admin-free/" mat-flat-button color="primary" class="fw-light w-100 fs-14">Download Free</a>
                 </li>
                 <li>
-                  <a href="javascript:void(0)" mat-flat-button color="accent" class="w-100 fw-light fs-14">Check Pro</a>
+                  <a href="https://www.wrappixel.com/templates/flexy-material-angular-admin/" mat-flat-button color="accent" class="w-100 fw-light fs-14">Check Pro</a>
                 </li>
               </ul>
             </div>

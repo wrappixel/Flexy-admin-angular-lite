@@ -130,6 +130,9 @@ ul {
 .mdc-checkbox .mdc-checkbox__native-control:enabled~.mdc-checkbox__background .mdc-checkbox__checkmark {
   color: $white !important;
 }
+.mdc-button{
+  border-radius: 7px !important;
+}
 
 // @=@=@=@=@=@=@=@=@=@=@=@=@=@=@=@=@
 // Flex

@@ -90,7 +90,7 @@ export class SalesComponent {
       plotOptions: {
         bar: {
           columnWidth: '45%',
-          borderRadius: 6,
+          borderRadius: 8,
         },
       },
     }

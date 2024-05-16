@@ -10,11 +10,13 @@
   .list-group {
     display: flex;
     align-items: center;
+    margin-bottom: 2px;
   }
 
   .sidebar-menu {
-    padding: 14px 16px;
-    border-radius: 9px;
+    padding: 13px 16px;
+    border-radius: 25px;
+    font-size: 15px;
 
     &.activelink {
       background-color: $info !important;

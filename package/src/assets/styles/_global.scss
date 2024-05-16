@@ -23,15 +23,13 @@ hr {
 
 .card {
   margin-bottom: 30px;
-  box-shadow: 0px 7px 30px 0px $shadow;
-  // background-color: $white;
+  box-shadow: 1px 0 20px #00000014;
   border-radius: 20px;
 }
 
 .mat-mdc-card {
   margin-bottom: 30px !important;
-  box-shadow: 0px 7px 30px 0px $shadow !important;
-  // background-color: $white !important;
+  box-shadow: 1px 0 20px #00000014 !important;
   border-radius: 20px !important;
   padding: 0 !important;
 }
@@ -60,8 +58,8 @@ ul {
 }
 
 .feather-base {
-  width: 20px !important;
-  height: 20px !important;
+  width: 18px !important;
+  height: 18px !important;
 }
 
 .feather-lg {

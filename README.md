@@ -30,7 +30,7 @@ Flexy Angular Admin Dashboard
       <a href="https://www.wrappixel.com/templates/flexy-angular-admin-free/">Download Now</a>
   </td>
   <td>
-    <a href="https://www.wrappixel.com/templates/flexy-material-angular-admin/">Purchase Now</a>
+    <a href="https://www.wrappixel.com/templates/flexy-material-angular-admin/?ref=33">Purchase Now</a>
   </td>
 </tr>
 <tr>
@@ -134,12 +134,12 @@ Flexy Angular Admin Dashboard
 
 # Upgrade to Premium version
 
-<a target="_blank" href="https://www.wrappixel.com/templates/flexy-material-angular-admin/">
-  <img src="https://www.wrappixel.com/wp-content/uploads/2022/03/flexy-angular-pro.jpg" alt="">
+<a target="_blank" href="https://www.wrappixel.com/templates/flexy-material-angular-admin/?ref=33">
+  <img src="https://www.wrappixel.com/wp-content/uploads/edd/2024/05/flexy-angular-material-admin-wpn.jpg" alt="">
 </a>
 <p>
   Checkout our premium version of Flexy Angular Admin Dashboard Template for lots more features and ready to use page templates.<br>
-  <a href="https://flexy-angular-main.netlify.app/dashboards/dashboard1">Check Live Preview</a> | <a href="https://www.wrappixel.com/templates/flexy-material-angular-admin/">Download</a>
+  <a href="https://flexy-angular-main.netlify.app/dashboards/dashboard1">Check Live Preview</a> | <a href="https://www.wrappixel.com/templates/flexy-material-angular-admin/?ref=33">Download</a>
 </p>
 
 <!-- Versions of Template -->
@@ -147,7 +147,7 @@ Flexy Angular Admin Dashboard
 <table>
 <thead>
 <tr>
-<th>Bootstrap</th>
+<th>Angular</th>
 <th>React Js</th>
 <th>Nuxt</th>
 <th>Vue Js</th>
@@ -156,23 +156,23 @@ Flexy Angular Admin Dashboard
 <tbody>
 <tr>
 <td>
-  <a href="https://www.wrappixel.com/templates/flexy-bootstrap-admin-template/" width="150px">
-    <img src="https://www.wrappixel.com/wp-content/uploads/edd/2021/05/flexy.jpg" alt="" style="max-width:150px;">
+  <a href="https://www.wrappixel.com/templates/flexy-material-angular-admin/?ref=33" width="150px">
+    <img src="https://www.wrappixel.com/wp-content/uploads/edd/2024/05/flexy-angular-material-admin-wpn.jpg" alt="" style="max-width:150px;">
   </a>
 </td>
 <td>
-  <a href="https://www.wrappixel.com/templates/flexy-react-material-dashboard-admin/" rel="nofollow" width="150px">
-    <img src="https://www.wrappixel.com/wp-content/uploads/edd/2021/07/flexy-react-admin.jpg" alt="" style="max-width:150px;">
+  <a href="https://www.wrappixel.com/templates/flexy-react-material-dashboard-admin/?ref=33" rel="nofollow" width="150px">
+    <img src="https://www.wrappixel.com/wp-content/uploads/edd/2024/05/flexy-react-admin-wpn.jpg" alt="" style="max-width:150px;">
   </a>
 </td>
 <td>
-  <a href="https://www.wrappixel.com/templates/spike-nuxtjs-admin-template/" rel="nofollow" width="150px">
-    <img src="https://www.wrappixel.com/wp-content/uploads/edd/2023/09/spike-nuxtjs-admin-dashboard-prev-img.jpg" alt="" style="max-width:150px;">
+  <a href="https://www.wrappixel.com/templates/spike-nuxtjs-admin-template/?ref=33" rel="nofollow" width="150px">
+    <img src="https://www.wrappixel.com/wp-content/uploads/edd/2024/05/spike-nuxtjs-admin-wpn.jpg" alt="" style="max-width:150px;">
   </a>
 </td>
 <td>
-  <a href="https://www.wrappixel.com/templates/spike-vuejs-admin-dashboard/" rel="nofollow" width="150px">
-    <img src="https://www.wrappixel.com/wp-content/uploads/edd/2023/09/spike-vuejs-admin-dashboard-prev-img.jpg" alt="" style="max-width:150px;">
+  <a href="https://www.wrappixel.com/templates/spike-vuejs-admin-dashboard/?ref=33" rel="nofollow" width="150px">
+    <img src="https://www.wrappixel.com/wp-content/uploads/edd/2024/05/spike-vuejs-vuetify-admin-wpn.jpg" alt="" style="max-width:150px;">
   </a>
 </td>
 </td>

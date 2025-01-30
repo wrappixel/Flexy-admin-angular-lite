@@ -1,2 +1,2 @@
-# Modernize-Angular-pro
-Modernize Angular Admin Dashboard
+# Flexy-Angular-pro
+Flexy Angular Admin Dashboard

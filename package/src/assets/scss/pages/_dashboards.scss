@@ -22,6 +22,10 @@
             flex-shrink: 0;
         }
 
+        &:last-child {
+            height: 45px;
+        }
+
         .point {
             flex-direction: column;
 

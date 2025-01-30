@@ -34,7 +34,6 @@ export interface SalesChartOption {
 
 @Component({
     selector: 'app-sales-overview',
-    standalone: true,
     imports: [MaterialModule, TablerIconsModule, NgApexchartsModule],
     templateUrl: './sales-overview.component.html',
 })

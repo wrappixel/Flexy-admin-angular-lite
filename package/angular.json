@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "flexy": {
+    "Flexy": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -18,17 +18,14 @@
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
             "allowedCommonJsDependencies": ["apexcharts", "bezier-easing", "moment"],
-            "outputPath": "dist/flexy",
+            "outputPath": "dist/Flexy",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": ["zone.js"],
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": ["src/favicon.ico", "src/assets"],
-            "styles": [
-              "src/styles.scss",
-              "src/assets/scss/style.scss"
-            ],
+            "styles": ["src/styles.scss", "src/assets/scss/style.scss"],
             "scripts": []
           },
           "configurations": {
@@ -62,10 +59,13 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "flexy:build:production"
+              "buildTarget": "Flexy:build:production"
+            },
+            "hmr": {
+              "hmr": true
             },
             "development": {
-              "buildTarget": "flexy:build:development"
+              "buildTarget": "Flexy:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -73,7 +73,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "flexy:build"
+            "buildTarget": "Flexy:build"
           }
         },
         "test": {

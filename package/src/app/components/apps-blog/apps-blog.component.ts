@@ -17,7 +17,6 @@ interface productcards {
 
 @Component({
     selector: 'app-blog',
-    standalone: true,
     imports: [MatCardModule, MatChipsModule, TablerIconsModule, MatButtonModule, MatIconModule],
     templateUrl: './apps-blog.component.html',
 })

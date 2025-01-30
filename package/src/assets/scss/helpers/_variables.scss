@@ -17,7 +17,6 @@ $spacers: (
   12: $spacer * 0.75,
   15: 15px,
   16: $spacer,
-  18: 18px,
   20: 20px,
   24: $spacer * 1.5,
   30: 30px,
@@ -28,7 +27,7 @@ $negative-spacers: negativify-map($spacers) !default;
 
 // Border
 
-$border-color: #e5eaef !default;
+$border-color: var(--mat-sys-outline-variant) !default;
 $borders: (
   0: 0,
   1: 1px solid $border-color,

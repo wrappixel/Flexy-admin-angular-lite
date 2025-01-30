@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { NgApexchartsModule } from 'ng-apexcharts';
 import { MaterialModule } from '../../material.module';
-import { FeatherModule } from 'angular-feather';
 
 interface stats {
     id: number;
@@ -14,8 +13,7 @@ interface stats {
 
 @Component({
     selector: 'app-daily-activities',
-    standalone: true,
-    imports: [NgApexchartsModule, MaterialModule, FeatherModule],
+    imports: [NgApexchartsModule, MaterialModule],
     templateUrl: './daily-activities.component.html',
 })
 export class AppDailyActivitiesComponent {

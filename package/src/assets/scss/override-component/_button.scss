@@ -1,0 +1,63 @@
+@use "sass:map";
+@use "@angular/material" as mat;
+@use "../variables" as *;
+
+@include mat.button-overrides(
+  (
+    filled-container-shape: var(--mat-sys-corner-small),
+    outlined-container-shape: var(--mat-sys-corner-small),
+    protected-container-shape: var(--mat-sys-corner-small),
+    text-container-shape: var(--mat-sys-corner-small),
+    protected-hover-container-elevation-shadow: var(--mat-sys-level3),
+  )
+);
+
+@include mat.icon-button-overrides(
+  (
+    icon-color: $text-color,
+  )
+);
+
+// styles
+html {
+  .mat-mdc-button-base.bg-light-primary:hover,
+  .mat-mdc-button-base.bg-light-secondary:hover,
+  .mat-mdc-button-base.bg-light-error:hover,
+  .mat-mdc-button-base.bg-light-warning:hover,
+  .mat-mdc-button-base.bg-light-success:hover {
+    color: $white !important;
+  }
+  .mat-mdc-button-base.bg-light-primary {
+    &:hover {
+      background-color: var(--mat-sys-primary) !important;
+    }
+  }
+
+  .mat-mdc-button-base.bg-light-secondary {
+    &:hover {
+      background-color: var(--mat-sys-secondary) !important;
+    }
+  }
+
+  .mat-mdc-button-base.bg-light-error {
+    &:hover {
+      background-color: var(--mat-sys-error) !important;
+    }
+  }
+
+  .mat-mdc-button-base.bg-light-warning {
+    &:hover {
+      background-color: $warning !important;
+    }
+  }
+
+  .mat-mdc-button-base.bg-light-success {
+    &:hover {
+      background-color: $success !important;
+    }
+  }
+
+  .mat-mdc-outlined-button:not(:disabled) {
+    border-color: inherit;
+  }
+}

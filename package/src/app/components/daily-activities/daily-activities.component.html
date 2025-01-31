@@ -1,32 +1,34 @@
 <mat-card class="cardWithShadow">
     <mat-card-content>
-        <mat-card-title>Daily Activities</mat-card-title>
-        <div class="timeline m-t-24">
-            @for(stat of stats; track stat) {
-            <div class="timeline-item d-flex overflow-hidden">
-                <div class="time text-right f-s-14">{{ stat.time }}</div>
-                <div class="point d-flex align-items-center">
-                    <span class="timeline-badge border-{{ stat.color }} m-y-8"></span>
-                    <span class="timline-border d-block"></span>
+        <mat-card-title>Recent Transactions</mat-card-title>
+        <div class="m-t-6">
+            @for(transaction of transactions; track transaction) {
+            <div class="d-flex align-items-center p-t-10 p-b-10">
+                <button mat-fab class="d-flex align-item-center bg-light-{{ transaction.iconColor }} text-{{
+              transaction.iconColor
+            }} rounded icon-48">
+                    <i-tabler name="{{ transaction.icon }}" class="icon-20 d-flex"></i-tabler>
+                </button>
+                <div class="m-l-15">
+                    <h5 class="f-s-16 f-w-500 m-t-0 m-b-0">
+                        {{ transaction.title }}
+                    </h5>
+                    <h6 class="f-s-14 m-0 f-w-400">{{ transaction.subtitle }}</h6>
                 </div>
-                <div class="desc">
-                    @if(stat.subtext) {
-                    <span class="f-s-14 lh-20">{{ stat.subtext }}</span>
-                    }
-
-                    @if(stat.title) {
-                    <span class="f-s-14 lh-20 f-w-600 d-block">{{
-                        stat.title
-                        }}</span>
-                    }
-
-                    @if(stat.link) {
-                    <a href="#" class="text-primary text-decoration-none mat-body-1">#ML-3467</a>
-                    }
+                <div class="m-l-auto">
+                    <h6 class="f-w-400 text-{{ transaction.status }} m-0">
+                        {{ transaction.amount }}
+                    </h6>
                 </div>
             </div>
             }
-
+        </div>
+        <div class="position-relative m-t-20">
+            <mat-divider></mat-divider>
+        </div>
+        <div class="d-flex align-items-center justify-content-between p-t-15">
+            <button mat-flat-button class="bg-secondary text-white">Add</button>
+            <p class="m-0 f-s-14">36 Recent Transactions</p>
         </div>
     </mat-card-content>
 </mat-card>

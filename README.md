@@ -51,10 +51,10 @@ Flexy Angular Admin Dashboard
 </tr>
 <tr>
   <td>
-  Angular 17 Version
+  Angular 18 Version
   </td>
   <td>
-  Angular 17 Version
+  Angular 18 Version
   </td>
 </tr>
 <tr>

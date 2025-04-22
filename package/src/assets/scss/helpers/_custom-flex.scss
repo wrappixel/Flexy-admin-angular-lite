@@ -17,6 +17,14 @@
   }
 }
 
+@media (min-width: 992px) {
+  body {
+    .d-md-flex {
+      display: flex !important;
+    }
+  }
+}
+
 @media (min-width: 960px) {
   .d-md-none {
     display: none !important;

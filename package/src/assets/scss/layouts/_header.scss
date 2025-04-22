@@ -78,6 +78,7 @@ html .topbar {
 
   .live-preview-drop {
     border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 7px;
 
     &:hover,
     &:active {
@@ -88,6 +89,7 @@ html .topbar {
 
   .get-pro-btn {
     background-color: #8D70F8;
+    border-radius: 7px;
 
     &:hover {
       background-color: #714BFF;
@@ -97,6 +99,7 @@ html .topbar {
   .all-access-pass-btn {
     background-color: #B3F143;
     color: #000000 !important;
+    border-radius: 7px;
 
     &:hover {
       background-color: #90DE03;

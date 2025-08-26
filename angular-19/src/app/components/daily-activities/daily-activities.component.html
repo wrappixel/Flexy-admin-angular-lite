@@ -1,0 +1,34 @@
+<mat-card class="cardWithShadow">
+    <mat-card-content>
+        <mat-card-title>Recent Transactions</mat-card-title>
+        <div class="m-t-6">
+            @for(transaction of transactions; track transaction) {
+            <div class="d-flex align-items-center p-t-10 p-b-10">
+                <button mat-fab class="d-flex align-item-center bg-light-{{ transaction.iconColor }} text-{{
+              transaction.iconColor
+            }} rounded icon-48">
+                    <i-tabler name="{{ transaction.icon }}" class="icon-20 d-flex"></i-tabler>
+                </button>
+                <div class="m-l-15">
+                    <h5 class="f-s-16 f-w-500 m-t-0 m-b-0">
+                        {{ transaction.title }}
+                    </h5>
+                    <h6 class="f-s-14 m-0 f-w-400">{{ transaction.subtitle }}</h6>
+                </div>
+                <div class="m-l-auto">
+                    <h6 class="f-w-400 text-{{ transaction.status }} m-0">
+                        {{ transaction.amount }}
+                    </h6>
+                </div>
+            </div>
+            }
+        </div>
+        <div class="position-relative m-t-20">
+            <mat-divider></mat-divider>
+        </div>
+        <div class="d-flex align-items-center justify-content-between p-t-15">
+            <button mat-flat-button class="bg-secondary text-white">Add</button>
+            <p class="m-0 f-s-14">36 Recent Transactions</p>
+        </div>
+    </mat-card-content>
+</mat-card>
